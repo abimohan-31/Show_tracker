@@ -7,20 +7,50 @@ a.navbar-brand{
     background-color: #FFE939;
 }
 
+div.container-fluid{
+    background-color: #FFFFFF;
+}
+
 .auth-btn{
     color: rgba(0, 0, 0, 0.411);
 }
 
-.btn-group{
+.btn-group, .type-group{
     display: flex;
-    margin: 30px 70px;
+    margin-left:300px;
     padding: 10px;
+    gap: 20px;
 }
+
+
 
 .genre{
     background-color: #E4E7EC;
     color: rgba(0, 0, 0, 0.589);
     border: none;
     border-radius: 5px;
-    gap: 10px;
+}
+
+.category{
+    background-color: #F4F6F8;
+}
+
+.alphabets{
+    display: flex;
+    margin-left:300px;
+    padding: 10px;
+    gap: 20px;
+    background-color: #F4F6F8;
+    font-size: large
+
+}
+
+.alph-btn{
+    border:  none;
+}
+
+div.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
