@@ -14,22 +14,24 @@ div.login-container{
     text-align: center;
 }
 
-button[type = submit]{
+#login-btn{
     width: 100%;   
     color: white;
     border: none;
-
-}
-
-#login-btn{
     background-color: #6ECA96;
 }
 
 #fb-btn{
+    width: 100%;   
+    color: white;
+    border: none;
     background-color: #3B5998;
 }
 
 #google-btn{
+    width: 100%;   
+    color: white;
+    border: none;
     background-color: #DD4B39;
 }
 
