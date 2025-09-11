@@ -17,47 +17,54 @@
 
     <!-- Navigation Start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3  bg-body-tertiary rounded">
-        <div class="container-fluid">
-            <a class="navbar-brand p-3" href="/index.html">Show<b>Trackr</b></a>
+        <div class="container-fluid h-10 ps-0">
+            <a class="navbar-brand p-2 me-0" href="/index.html">Show<b>Trackr</b></a>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active text-center align-baseline" id="home" aria-current="page"
+                        <a class="nav-link active text-center align-baseline me-0" id="home" aria-current="page"
                             href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/add.html">Add</a>
+                        <a class="nav-link active" href="/add.html">Add</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <a href="/login.html"><button class="btn btn-outline-light auth-btn"
-                            type="submit">Login</button></a>
-                    <a href="/signup.html"><button class="btn btn-outline-light auth-btn" type="submit">Sign
-                            up</button></a>
-                </form>
+                <a href="/login.html"><button class="btn btn-outline-light auth-btn" type="submit">Login</button></a>
+                <a href="/signup.html"><button class="btn btn-outline-light auth-btn" type="submit">Sign up</button></a>
             </div>
         </div>
     </nav>
     <!-- End Navigation -->
 
-    <div class="card mb-3">
-        <div class="row g-0">
-            <div class="col-md-4 d-grid">
+    <div class="card mb-3 rounded-0">
+        <div class="row g-0 d-flex">
+            <div class="col-md-3 d-grid">
                 <img src="/Assets/images/Game of Thrones.jpg" class="img-fluid px-3 py-3" alt="Game of Thrones"
-                    width="250px">
+                    width="350px" height="250px">
                 <a href="login.html" class="btn btn-primary px-3 mx-3 rounded-0">Login to Subscribe</a>
 
             </div>
 
             <div class="col">
                 <div class="card-body">
-                    <h3 class="card-title"><b>Game of Thrones</b></h3>
-                    <h5 class="card-title "><b><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    <div class="header d-flex justify-content-between">
+                        <h3 class="card-title ms-0"><b>Game of Thrones</b></h3>
+                        <div class="heart-number">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="#A94442"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <h5 class="card-title pb-3"><b><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
                                 <path
                                     d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
-                            </svg> Sunday <u>9:00 PM</u> on HBO</h5>
-                    <p class="card-text">Seven noble families fight for control of the mythical land of Westeros.
+                            </svg>
+                            Sunday <u>9:00 PM</u> on HBO</h5>
+                    <p class="card-text py-3">Seven noble families fight for control of the mythical land of Westeros.
                         Friction between the
                         houses leads to full-scale war. All while a very ancient evil awakens in the farthest north.
                         Amidst the
@@ -66,6 +73,20 @@
                         men and the icy horrors beyond.</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="alert p-2 text-dark bg-opacity-10 rounded-0">The next episode starts in 2 months</div>
+
+
+    <div class="compain d-grid">
+        <div class="show border-bottom">
+            <h5 class="card-header pt-3 ps-3 fs-6 fw-bold text-start align-top">Episodes
+            </h5>
+        </div>
+        <div class="describe">
+            <span class="card-title">Inside Game of Thrones </span><span class="card-text text-body-tertiary"> Season 0,
+                Episode 1</span>
         </div>
     </div>
 

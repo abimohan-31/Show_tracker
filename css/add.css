@@ -30,9 +30,22 @@ input[type = text]{
 
 .add-moviebtn{
     background-color: #6BA9F7;
-    color: white;  !important
+    color: white;
     margin-top: 05px;
     margin-bottom: 10px;
     border-radius: 0;
     border: none;
+}
+
+#add{
+    background-color: #F7F7F7;
+    border: 1px dotted;
+    border-radius: 4px;
+    width: 90px;
+    height: 46px;
+    padding-left: 18px;
+}
+
+#home{
+    border:none;
 }

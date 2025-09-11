@@ -37,3 +37,16 @@ div.line{
     border: none;
 
 }
+
+#signup{
+    background-color: #F7F7F7;
+    border: 1px dotted;
+    border-radius: 4px;
+    width: 90px;
+    height: 46px;
+    padding-left: 18px;
+}
+
+#home{
+    border: none;
+}
