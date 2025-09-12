@@ -5,7 +5,7 @@ body{
 
 div.login-container{
     width: 400px;
-    height: 450px;
+    height: 470px;
     background-color: white;
     margin-left: 40%;
     margin-top: 10%;
@@ -63,4 +63,17 @@ div.line{
 
 #home{
     border: none;
+}
+
+div.error{
+    color:#d3230c;
+    text-align: left;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color: #d3230c;
 }

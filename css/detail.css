@@ -33,23 +33,22 @@ img-fluid{
     border-radius: 5px;
 }
 
-.card-title, .card-body{
-    font-weight: bold;
-}
-
-.card-text{
-    font-weight: 200;
-}
-
 .show{
     background-color: #F6F6F6;
     height: 40px;
     border: none;
 }
 
-.describe{
-    background-color:#F6F6F6;
-    border: none;
-    margin-top: 0%;
-    height: 200px;
+#rating{
+    width: 200%;
+    color: #A94442;
+    margin-left: 190px;
+    font-weight: bold;
+}
+
+.vr{
+    color: black;
+    border-left: 4px solid black;
+    
+   
 }

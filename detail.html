@@ -9,6 +9,11 @@
     <!-- Bootstrap CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- custom links -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/detail.css">
 </head>
@@ -42,20 +47,14 @@
                 <img src="/Assets/images/Game of Thrones.jpg" class="img-fluid px-3 py-3" alt="Game of Thrones"
                     width="350px" height="250px">
                 <a href="login.html" class="btn btn-primary px-3 mx-3 rounded-0">Login to Subscribe</a>
-
             </div>
 
             <div class="col">
                 <div class="card-body">
                     <div class="header d-flex justify-content-between">
                         <h3 class="card-title ms-0"><b>Game of Thrones</b></h3>
-                        <div class="heart-number">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="#A94442"
-                                class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                            </svg>
-
+                        <div class="heart-number h-10 w-25">
+                            <i class="bi bi-heart-fill" id="rating"> 9.5</i>
                         </div>
                     </div>
                     <h5 class="card-title pb-3"><b><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -72,30 +71,75 @@
                         realms of
                         men and the icy horrors beyond.</p>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 
     <div class="alert p-2 text-dark bg-opacity-10 rounded-0">The next episode starts in 2 months</div>
 
-
+    <!-- review start -->
     <div class="compain d-grid">
         <div class="show border-bottom">
-            <h5 class="card-header pt-3 ps-3 fs-6 fw-bold text-start align-top">Episodes
+            <h5 class="card-header p-3 ps-2 fs-6 fw-bold text-start align-top"> <i class="bi bi-cassette"></i> Episodes
             </h5>
         </div>
-        <div class="describe">
-            <span class="card-title">Inside Game of Thrones </span><span class="card-text text-body-tertiary"> Season 0,
-                Episode 1</span>
+        <div class="describe mt-0 border" style="height: 180px; background-color:#F6F6F6;">
+            <div class="d-flex" style="height: 80px;">
+                <div class="vr mt-3 ms-1 ps-1 "></div>
+                <div class="content ps-1 ms-2">
+                    <div class="text-line mt-1 pt-1">
+                        <span class="card-title fw-bold">Inside Game of Thrones </span><span
+                            class="card-text fw-light text-body-tertiary"> Season 0,
+                            Episode 1</span>
+                    </div>
+                    <div class="clock">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock-history" viewBox="0 0 16 16">
+                            <path
+                                d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z" />
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z" />
+                            <path
+                                d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5" />
+                        </svg>
+                        <span class="time fw-light">12/5/10 5:30 A.M</span>
+                        <div id="para">
+                            <span class="para fw-light">A short look into film-making spanrocess for the production Game
+                                of Thrones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex" style="height: 80px;">
+                <div class="vr mt-3 ms-1 ps-1 "></div>
+                <div class="content ps-1 ms-2">
+                    <div class="text-line mt-1 pt-1">
+                        <span class="card-title fw-bold">15-Minute Preview </span><span
+                            class="card-text fw-light text-body-tertiary"> Season 0,
+                            Episode 2</span>
+                    </div>
+                    <div id="para">
+                        <span class="para fw-light">Game of Thrones is an epic fantasy series set in Westeros, where
+                            powerful families fight for the Iron Throne while dark forces rise in the North. With
+                            dragons, battles, and shocking twists, the story explores power, betrayal, and survival. Its
+                            unforgettable characters and dramatic storytelling made it one of the most popular shows in
+                            the world.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+<!-- End review -->
 
-
-    <!-- JS CDN link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="js/detail.js"></script>
+            <!-- JS CDN link -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+            <script src="js/detail.js"></script>
 </body>
 
 </html>

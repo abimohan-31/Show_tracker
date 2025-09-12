@@ -50,3 +50,8 @@ div.line{
 #home{
     border: none;
 }
+
+div.error{
+    color:#d3230c;
+    text-align: left;
+}
