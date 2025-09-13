@@ -1,3 +1,4 @@
+/* Home Page Start */
 *{
     margin: 0;
     padding: 0;
@@ -72,3 +73,299 @@ h5{
     width: 90px;
     height: 46px;
 }
+
+/* End Home Page */
+
+
+/* Add Page start */
+body{
+    background-color: #E4E7EC;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div.card{
+    height: 250px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 80px;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+}
+
+div.card-header{
+    font-weight: bold;
+    background-color: #F6F6F6;
+}
+
+label.movie-name{
+    font-weight:600;
+    margin-right: 30px;
+    margin-bottom: 05px;
+}
+
+input[type = text]{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.274);
+}
+
+.add-moviebtn{
+    background-color: #6BA9F7;
+    color: white;
+    margin-top: 05px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: none;
+}
+
+#add{
+    background-color: #F7F7F7;
+    border: 1px dotted;
+    border-radius: 4px;
+    width: 90px;
+    height: 46px;
+    padding-left: 18px;
+}
+
+#home{
+    border:none;
+}
+
+.message{
+display: none;
+
+}
+/* End Add Page */
+
+/* Detail Page start */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #E4E7EC;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.card{
+    height: 530px;
+    width: 1400px;
+    margin-top: 50px;
+    margin-left: 280px;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+}
+
+a.btn{
+    width: 320px;
+}
+
+.alert, .show, .describe{
+    width: 1400px;
+    margin-top: 30px;
+    margin-left: 280px;
+    background-color: #E5F7FD;
+    border: 1px solid #BCF8F3;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+}
+
+img-fluid{
+    border-radius: 5px;
+}
+
+.show{
+    background-color: #F6F6F6;
+    height: 40px;
+    border: none;
+}
+
+#rating{
+    width: 200%;
+    color: #A94442;
+    margin-left: 190px;
+    font-weight: bold;
+}
+
+
+/* End Detail Page */
+
+/* SignUp Page start */
+body {
+  background-color: #e4e7ec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.login-container {
+  width: 400px;
+  height: 480px;
+  background-color: white;
+  margin-left: 40%;
+  margin-top: 10%;
+  padding: 15px;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+  text-align: center;
+}
+h1 {
+  margin-bottom: 10px;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: black;
+}
+
+span.inform {
+  color: rgba(0, 0, 0, 0.418);
+}
+
+h5 {
+  padding-top: 20px;
+}
+
+div.line {
+  border-bottom: 1px black;
+}
+
+#signup-btn {
+  width: 100%;
+  color: white;
+  border: none;
+}
+
+#signup {
+  background-color: #f7f7f7;
+  border: 1px dotted;
+  border-radius: 4px;
+  width: 90px;
+  height: 46px;
+  padding-left: 18px;
+}
+
+#home {
+  border: none;
+}
+
+div.error {
+  color: #cc3e2b;
+  text-align: left;
+  display: none;
+  font-size: 14px;
+  height: 25px;
+  padding: 0 0 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 380;
+  padding-top: 10px;
+  padding-left: 30px;
+  margin: 5px 0 10px 0;
+}
+
+div.input-type {
+  position: relative;
+}
+
+div.icons {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+
+/* End SignUp Page */
+
+/* Login Page start */
+body{
+    background-color: #E4E7EC;
+}
+
+
+div.login-container{
+    width: 400px;
+    height: 470px;
+    background-color: white;
+    margin-left: 40%;
+    margin-top: 10%;
+    padding: 15px;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+    text-align: center;
+}
+
+#login-btn{
+    width: 100%;   
+    color: white;
+    border: none;
+    background-color: #6ECA96;
+}
+
+#fb-btn{
+    width: 100%;   
+    color: white;
+    border: none;
+    background-color: #3B5998;
+}
+
+#google-btn{
+    width: 100%;   
+    color: white;
+    border: none;
+    background-color: #DD4B39;
+}
+
+.signup-link{
+    text-decoration: none;
+    color: black;
+}
+
+span.inform{
+    color: rgba(0, 0, 0, 0.418);
+}
+
+h5{
+    padding: 20px;
+}
+
+div.line{
+    border-bottom: 1px black;
+}
+
+#login{
+    background-color: #F7F7F7;
+    border: 1px dotted;
+    border-radius: 4px;
+    width: 90px;
+    height: 46px;
+    padding-left: 18px;
+}
+
+#home{
+    border: none;
+}
+
+div.error{
+    color:#d3230c;
+    text-align: left;
+    display: none;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  width: 370px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 5px 0 22px 0;
+}
+
+div.input-type {
+  position: relative;
+}
+
+div.icons {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+/* End Login Page */
+

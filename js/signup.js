@@ -1,74 +1,87 @@
-// variables
+// alert("test");
+
+//variables declaration
 const form = document.getElementById("form-container");
-const username = document.getElementById("username")
-const email = document.getElementById("email1");
-const password = document.getElementById("password1");
+const inputName = document.getElementById("name");
+const inputEmail = document.getElementById("email");
+const inputPassword = document.getElementById("password");
 
-form.addEventListener ('submit', function(event){
-    event.preventDefault();
-    alert();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
+  let isDataValid = true;
 
-    validateInputs();
+  // Reqular Expressions
+  const nameRegex = /^[a-zA-Z]{3,}$/;
+  const emailRegex =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const passwordRegex = /^[a-zA-Z0-9]{8,}$/;
 
+  //   Error Message
+  const errorName = document.getElementById("name-error");
+  const errorEmail = document.getElementById("email-error");
+  const errorPassword = document.getElementById("password-error");
 
+  //User name Validation
 
-// to avoid whitespace
-function validateInputs() {
-    const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();   
-    
-    if (usernameValue === '') {
-        setError (username, "Name is required");
-    } else {
-        setSuccess (username);
+  if (inputName.value.trim() === "") {
+    isDataValid = false;
+    errorName.style.display = "block";
+    errorName.innerText = "Name is Required";
+  } else if (!nameRegex.test(inputName.value.trim())) {
+    isDataValid = false;
+    errorName.style.display = "block";
+    errorName.innerText =
+      "Name must be at least 3 characters and contain only alphabets";
+  } else {
+    errorName.style.display = "none";
+  }
+
+  //User email Validation
+
+  if (inputEmail.value.trim() === "") {
+    isDataValid = false;
+    errorEmail.style.display = "block";
+    errorEmail.innerText = "Email is Required";
+  } else if (!emailRegex.test(inputEmail.value.trim())) {
+    isDataValid = false;
+    errorEmail.style.display = "block";
+    errorEmail.innerText = "Enter a valid Email";
+  } else {
+    errorEmail.style.display = "none";
+  }
+
+  //Password Validation
+
+  if (inputPassword.value.trim() === "") {
+    isDataValid = false;
+    errorPassword.style.display = "block";
+    errorPassword.innerText = "Password is Required";
+  } else if (!passwordRegex.test(inputPassword.value.trim())) {
+    isDataValid = false;
+    errorPassword.style.display = "block";
+    errorPassword.innerText = "Password must be at least 08 characters";
+  } else {
+    errorPassword.style.display = "none";
+  }
+
+  // Show success if all validations pass
+  if (isDataValid) {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    if (users.some((user) => user.email === inputEmail.value.trim())) {
+      return;
     }
 
+    users.push({
+      userName: inputName.value.trim(),
+      email: inputEmail.value.trim(),
+      password: inputPassword.value.trim(),
+    });
 
-    if (emailValue === '') {
-        setError (email, "Email is required");
-    } else if (!validateEmail(emailValue)) {
-        setError (email, "Enter a valid email");
-    } else {
-        setSuccess (email)
-    }
+    localStorage.setItem("users", JSON.stringify(users));
 
-    if (passwordValue === '') {
-        setError (password, "Password is required");
-    } else if (passwordValue.length < 8){
-        setError (password, "Password must be atleast 08 Characters");
-    } else {
-        setSuccess (password)
-    }
-}
-
-
-const setError = (element, message) => {
-    const inputDisplay = element.parentElement;
-    const errorDisplay = inputDisplay.querySelector('.error');
-
-    errorDisplay.innerText = message;
-    inputDisplay.classList.add('error');
-    inputDisplay.classList.remove('success');
-}
-
-const setSuccess = (element) => {
-    const inputDisplay = element.parentElement;
-    const errorDisplay = inputDisplay.querySelector('.error');
-
-    errorDisplay.innerText = '';
-    inputDisplay.classList.add('error');
-    inputDisplay.classList.remove('success');
-}
-
-// email validatio 
-const validateEmail = (emailValue) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
-
-})
+    alert("You signed up successfully!");
+    form.reset();
+  }
+});
