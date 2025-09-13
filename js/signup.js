@@ -1,11 +1,12 @@
 // variables
-let form = document.getElementById("form-container");
-let username = document.getElementById("username")
-let email = document.getElementById("email1");
-let password = document.getElementById("password1");
+const form = document.getElementById("form-container");
+const username = document.getElementById("username")
+const email = document.getElementById("email1");
+const password = document.getElementById("password1");
 
-form.addEventListener ('submit', e => {
-    e.preventDefault();
+form.addEventListener ('submit', function(event){
+    event.preventDefault();
+    alert();
 
 
     validateInputs();
@@ -43,7 +44,7 @@ function validateInputs() {
 }
 
 
-let setError = (element, message) => {
+const setError = (element, message) => {
     const inputDisplay = element.parentElement;
     const errorDisplay = inputDisplay.querySelector('.error');
 
@@ -52,7 +53,7 @@ let setError = (element, message) => {
     inputDisplay.classList.remove('success');
 }
 
-let setSuccess = (element) => {
+const setSuccess = (element) => {
     const inputDisplay = element.parentElement;
     const errorDisplay = inputDisplay.querySelector('.error');
 
