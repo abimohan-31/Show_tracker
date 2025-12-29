@@ -1,79 +1,90 @@
-body{
-    background-color: #E4E7EC;
+body {
+  background-color: #e4e7ec;
 }
 
-
-div.login-container{
-    width: 400px;
-    height: 470px;
-    background-color: white;
-    margin-left: 40%;
-    margin-top: 10%;
-    padding: 15px;
-    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
-    text-align: center;
+div.login-container {
+  width: 400px;
+  height: 470px;
+  background-color: white;
+  margin-left: 40%;
+  margin-top: 10%;
+  padding: 15px;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.315);
+  text-align: center;
 }
 
-#login-btn{
-    width: 100%;   
-    color: white;
-    border: none;
-    background-color: #6ECA96;
+#login-btn {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: #6eca96;
 }
 
-#fb-btn{
-    width: 100%;   
-    color: white;
-    border: none;
-    background-color: #3B5998;
+#fb-btn {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: #3b5998;
 }
 
-#google-btn{
-    width: 100%;   
-    color: white;
-    border: none;
-    background-color: #DD4B39;
+#google-btn {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: #dd4b39;
 }
 
-.signup-link{
-    text-decoration: none;
-    color: black;
+.signup-link {
+  text-decoration: none;
+  color: black;
 }
 
-span.inform{
-    color: rgba(0, 0, 0, 0.418);
+span.inform {
+  color: rgba(0, 0, 0, 0.418);
 }
 
-h5{
-    padding: 20px;
+h5 {
+  padding: 20px;
 }
 
-div.line{
-    border-bottom: 1px black;
+div.line {
+  border-bottom: 1px black;
 }
 
-#login{
-    background-color: #F7F7F7;
-    border: 1px dotted;
-    border-radius: 4px;
-    width: 90px;
-    height: 46px;
-    padding-left: 18px;
+#login {
+  background-color: #f7f7f7;
+  border: 1px dotted;
+  border-radius: 4px;
+  width: 90px;
+  height: 46px;
+  padding-left: 18px;
 }
 
-#home{
-    border: none;
+#home {
+  border: none;
 }
 
-div.error{
-    color:#d3230c;
-    text-align: left;
+div.error {
+  color: #d3230c;
+  text-align: left;
+  display: none;
 }
 
-.input-group.success input{
-    border-color: #0cc477;
+input[type="email"],
+input[type="password"] {
+  width: 370px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 5px 0 22px 0;
 }
 
-.input-group.error input{
-    border-color: #d3230c;
+div.input-type {
+  position: relative;
+}
+
+div.icons {
+  position: absolute;
+  top: 11px;
+  left: 10px;
 }

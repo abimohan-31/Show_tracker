@@ -1,19 +1,27 @@
-const form = document.getElementById("form");
+document.addEventListener("DOMContentLoaded", () => {
+    const addForm = document.getElementById('addForm');
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+    addForm.onsubmit = (e) => {
+        e.preventDefault();
+        
+        const shows = DataManager.getShows();
+        
+        const newShow = {
+            title: document.getElementById('inTitle').value.trim(),
+            type: document.getElementById('inType').value,
+            status: document.getElementById('inStatus').value,
+            rating: parseFloat(document.getElementById('inRating').value),
+            year: parseInt(document.getElementById('inYear').value),
+            genres: document.getElementById('inGenres').value.split(',').map(s => s.trim()),
+            img: document.getElementById('inImg').value.trim(),
+            moral: document.getElementById('inMoral').value.trim()
+        };
 
-  const movieName = document.getElementById("add-movie");
-  const message = document.getElementById("message");
-  const nameRegex = /^[a-zA-Z]{1,}$/;
+        // Add to the beginning of the array
+        shows.unshift(newShow);
+        DataManager.saveShows(shows);
 
-  if (movieName.value == "" || !nameRegex.test(movieName.value)) {
-    message.style.display = "block";
-    message.style.color = "red";
-    message.innerText = "Invalid TV Show";
-  } else {
-    message.style.display = "block";
-    message.style.color = "green";
-    message.innerText = "TV Show has been added ";
-  }
+        alert('Show added successfully!');
+        window.location.href = 'index.html';
+    };
 });

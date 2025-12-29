@@ -1,405 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
-
-        <!-- Bootstrap CDN link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-                crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTrackr | Modern Show Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-        <!-- Navigation Start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3  bg-body-tertiary rounded">
-                <div class="container-fluid h-10 ps-0">
-                        <a class="navbar-brand p-2 me-0" href="./index.html">Show<b>Trackr</b></a>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                                        style="--bs-scroll-height: 100px;">
-                                        <li class="nav-item">
-                                                <a class="nav-link active text-center align-baseline me-0" id="home"
-                                                        aria-current="page" href="./index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="./add.html">Add</a>
-                                        </li>
-                                </ul>
-                                <a href="login.html"><button class="btn btn-outline-light auth-btn"
-                                                type="submit">Login</button></a>
-                                <a href="signup.html"><button class="btn btn-outline-light auth-btn" type="submit">Sign
-                                                up</button></a>
-                        </div>
-                </div>
-        </nav>
-        <!-- End Navigation -->
-
-        <!-- Genere and Alphabets -->
-        <div class="category ">
-                <!-- Alphabets order Start -->
-                <div class="alphabets d-flex justify-content-center p-3 gap-2 fs-2">
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        0-9 </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        A </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        B </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        C </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        D </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        E </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        F </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        G </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        H </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        I </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        J </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        K </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        L </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        M </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        N </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        O </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        P </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        Q </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        R </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        S </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        T </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        U </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        V </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        W </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        X </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        Y </button> </a>
-                        <a class="link-offset-2 link-underline link-underline-opacity-0 text-black" href="#"> <button
-                                        type="submit" class="alph-btn border-0 bg-transparent">
-                                        Z </button> </a>
-                </div>
-                <!-- End Alphabet Order -->
-
-                <!-- Genre Start -->
-                <div class="btn-group d-flex p-1 gap-1" role="group" aria-label="Basic example">
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Action
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Adventure
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Animation
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Children
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Comedy
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Crime
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Documentary
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Drama
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Right
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Family
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Fantasy
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Food
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Home and
-                                        Garden </button>
-                        </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Horror
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Mini-Series
-                                </button> </a>
-                </div>
-                <div class="type-group d-flex  p-1 gap-1" role="group" aria-label="Basic example">
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Mystery
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> News
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Reality
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Romance
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Sci-fi
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Suspense
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Talk Show
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Thriller
-                                </button> </a>
-                        <a href="#"> <button type="button" class="btn btn-secondary border-0 rounded genre"> Travel
-                                </button> </a>
-                </div>
-                <!-- End Genre -->
-
+    <nav>
+        <a href="index.html" class="logo">Show<span>Trackr</span></a>
+        <div class="nav-actions">
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Search shows...">
+                <button id="clearSearch" class="btn-clear-search" title="Clear search">×</button>
+            </div>
+            <a href="add.html" class="btn-add">Add Show</a>
         </div>
-        <!-- End  -->
+    </nav>
 
-        <div class="movies mt-3 p-0">
-                <div class="first-row d-flex justify-content-between ">
-                        <div class="card-footer">
-                                <div class="header-show d-flex justify-content-between border-bottom w-auto" id="show">
-                                        <h5 class="card-header pt-3 ps-3 fs-6 fw-bold text-start align-top">TOP 12 SHOWS
-                                        </h5>
-                                        <form class="d-flex" role="search">
-                                                <input class="form-control me-2 fs-5 mt-2 p-3 text-end align-bottom opacity-25 bg-transparent"
-                                                        type="search" placeholder="Search......" aria-label="Search" />
-                                        </form>
+    <section class="controls">
+        <div class="filter-group">
+            <div class="btn-row" id="typeBar">
+                <button class="type-btn active" data-filter="All">All Shows</button>
+                <button class="type-btn" data-filter="Movie">Movies</button>
+                <button class="type-btn" data-filter="Series">Series</button>
+            </div>
+            <div class="btn-row" id="alphabetBar">
+                <button class="alph-btn active" data-filter="All">All</button>
+                <button class="alph-btn" data-filter="0-9">0-9</button>
+            </div>
+            <div class="btn-row" id="genreBar">
+                <button class="genre-btn active" data-filter="All">All Genres</button>
+            </div>
+            <button id="clearFilters" class="btn-clear-filters">Clear All Filters</button>
+        </div>
+    </section>
 
-                                </div>
+    <main class="movie-grid" id="movieGrid">
+        <!-- Movies will be rendered here -->
+    </main>
 
-
-                                <!-- 1st row  Start -->
-                                <div class="card-group mt-3 px-3 gap-4" id="cards">
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Game of Thrones.jpg"
-                                                        class="card-img-top rounded" alt="Game of Thrones" width="90px"
-                                                        height="400px"> </a>
-                                                <div class="card-body">
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Game of
-                                                                Thrones</h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Episodes: 84</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/breaking bad.jpg" class="card-img-top rounded"
-                                                        alt="Breaking Bad" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Breaking
-                                                                Bad</h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Episodes: 79</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Dexter.jpg" class="card-img-top rounded"
-                                                        alt="Dexter" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Dexter
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Episodes: 125</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/how i met your mother.jpg"
-                                                        class="card-img-top rounded" alt="How I Met Your Mother"
-                                                        width="90px" height="400px"></a>
-                                                <div class="card-body">
-                                                        <h5 class="card-title  text-center align-baseline fs-6">How I
-                                                                Met Your Mother</h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Episodes: 219</p>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- End 1st row -->
-
-                                <!-- 2nd row start -->
-                                <div class="card-group mt-3 px-3 gap-4" id="cards">
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Enchanto.jpg" class="card-img-top rounded"
-                                                        alt="Enchanto" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Enchanto
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Animation | Fantasy | Romance | Thriller</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Maleficent.png" class="card-img-top rounded"
-                                                        alt="Maleficent" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">
-                                                                Maleficent </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Action | Fantasy | Drama | Family</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/The-Conjuring.jpg" class="card-img-top rounded"
-                                                        alt="The Conjuring" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">The
-                                                                Conjuring
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Horror | Thriller | Suspense | Mystery</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Kudumbasthan.jpg" class="card-img-top rounded"
-                                                        alt="Kudumbasthan" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">
-                                                                Kudumbasthan</h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Comedy | Drama | Family</p>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- End 2nd row -->
-
-                                <!-- 3rd row start -->
-                                <div class="card-group mt-3 px-3 gap-4" id="cards">
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/alice-in-wonderland.jpg"
-                                                        class="card-img-top rounded" alt="Alice in Wonderland"
-                                                        width="90px" height="400px"> </a>
-                                                <div class="card-body">
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Alice in
-                                                                Wonderland </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Fantasy | Children</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Jumanji-welcome-to-the-jungle.png"
-                                                        class="card-img-top rounded" alt="Jumanji" width="90px"
-                                                        height="400px"> </a>
-                                                <div class="card-body">
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Jumanji
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Adventure | Fantasy | Comedy | Action</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Ice-age.jpg" class="card-img-top rounded"
-                                                        alt="Ice Age" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Ice Age
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Animation | Fantasy | Family | Children</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Niththam-oru-vaanam.jpg"
-                                                        class="card-img-top rounded" alt="Niththam Oru Vaanam"
-                                                        width="90px" height="400px"></a>
-                                                <div class="card-body">
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Niththam
-                                                                Oru Vaanam</h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Romance | Comedy | Drama | Thriller</p>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- End 3rd row -->
-
-                                <!-- 4th row start -->
-                                <div class="card-group mt-3 px-3 gap-4" id="cards">
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Moana.jpeg" class="card-img-top rounded"
-                                                        alt="Moana" width="90px" height="400px"></a>
-                                                <div class="card-body"> 
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Moana
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Animation | Fantasy | Travel | Children</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/zootopia.jpg" class="card-img-top rounded"
-                                                        alt="Zootopia" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Zootopia
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Crime | Fantasy | Children | Mystery</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/dawn-of-the-planet-of-the-apes.jpeg"
-                                                        class="card-img-top rounded"
-                                                        alt="Dawn of the Planet of the Apes" width="90px"
-                                                        height="400px"></a>
-                                                <div class="card-body">
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Dawn of
-                                                                the Planet of the Apes
-                                                        </h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Crime | Action | Suspense | Thriller</p>
-                                                </div>
-                                        </div>
-                                        <div class="card border border-0">
-                                               <a href="detail.html"> <img src="Assets/images/Jurrasic-world.jpg" class="card-img-top rounded"
-                                                        alt="Jurrasic World" width="90px" height="400px">
-                                                <div class="card-body"> </a>
-                                                        <h5 class="card-title  text-center align-baseline fs-6">Jurrasic
-                                                                World</h5>
-                                                        <p class="card-text mt-3 text-center fs-6 text-body-tertiary">
-                                                                Action | Sci-fi | Suspense | Thriller</p>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- End 4th row -->
-
-                        </div>
-                </div>
-
-
-
-                <!-- JS CDN link -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                        crossorigin="anonymous"></script>
-                <script src="js/home.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/home.js"></script>
 
 </body>
-
 </html>

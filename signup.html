@@ -1,142 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SignUp Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | ShowTrackr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-    <!-- Bootstrap CDN link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/signup.css" />
-  </head>
-
-  <body>
-    <!-- Navigation Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 bg-body-tertiary rounded"
-    >
-      <div class="container-fluid h-10 ps-0">
-        <a class="navbar-brand p-2 me-0" href="./index.html"
-          >Show<b>Trackr</b></a
-        >
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link active text-center align-baseline me-0"
-                id="home"
-                aria-current="page"
-                href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./add.html">Add</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <a href="./login.html"
-              ><button class="btn btn-outline-light auth-btn" type="submit">
-                Login
-              </button></a
-            >
-            <a href="./signup.html"
-              ><button
-                class="btn btn-outline-light auth-btn"
-                id="signup"
-                type="submit"
-              >
-                Sign up
-              </button></a
-            >
-          </form>
-        </div>
-      </div>
+    <nav>
+        <a href="index.html" class="logo">Show<span>Trackr</span></a>
     </nav>
-    <!-- End Navigation -->
 
-    <div class="login-container">
-      <h1>Sign up</h1>
-      <form id="form-container">
-        <div class="mb-2">
-          <div class="input-type">
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder=" Name"
-            />
-            <div class="icons"><i class="bi bi-person-fill"></i></div>
-          </div>
-          <div class="error" id="name-error"></div>
-        </div>
-
-        <div class="mb-2">
-          <div class="input-type">
-            <input
-              type="text"
-              class="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="Email"
-            />
-            <div class="icons"><i class="bi bi-at"></i></div>
-          </div>
-          <div class="error" id="email-error"></div>
-        </div>
-
-        <div class="mb-2">
-          <div class="input-type">
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              placeholder="Password"
-            />
-            <div class="icons" style="transform: rotate(270deg)">
-              <i class="bi bi-key-fill"></i>
+    <main class="form-container" style="max-width: 450px;">
+        <h2 class="form-title">Join ShowTrackr</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="John Doe" required>
             </div>
-          </div>
-          <div class="error my-0" id="password-error"></div>
-        </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-submit">Create Account</button>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+                Already have an account? <a href="login.html" style="color: var(--accent-red); text-decoration: none;">Sign in</a>
+            </p>
+        </form>
+    </main>
 
-        <p>
-          By clicking on Sign up, you agree to <b>terms & conditions</b> and
-          <b>privacy policy</b>
-        </p>
+    <script>
+        document.getElementById('signupForm').onsubmit = (e) => {
+            e.preventDefault();
+            alert('Registration simulation complete.');
+            window.location.href = 'login.html';
+        };
+    </script>
 
-        <button type="submit" id="signup-btn" class="btn btn-primary pb-1 my-2">
-          SignUp
-        </button>
-      </form>
-
-      <p>
-        <span class="inform">Already have an account</span>
-        <a href="./login.html" class="signup-link">Log in now</a>
-      </p>
-    </div>
-
-    <!-- script files added -->
-    <script src="js/signup.js"></script>
-
-    <!-- JS CDN link -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+</body>
 </html>

@@ -12,10 +12,10 @@ form.addEventListener("submit", (e) => {
   let isDataValid = true;
 
   // Reqular Expressions
-  const nameRegex = /^[a-zA-Z]{3,}$/;
+  const nameRegex = /^[a-zA-Z]{5,}$/;
   const emailRegex =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const passwordRegex = /^[a-zA-Z0-9]{8,}$/;
+  const passwordRegex = /^[a-zA-Z0-9]{8}$/;
 
   //   Error Message
   const errorName = document.getElementById("name-error");
@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
     isDataValid = false;
     errorName.style.display = "block";
     errorName.innerText =
-      "Name must be at least 3 characters and contain only alphabets";
+      "Name must be at least 5 characters and contain only alphabets";
   } else {
     errorName.style.display = "none";
   }
@@ -60,7 +60,7 @@ form.addEventListener("submit", (e) => {
   } else if (!passwordRegex.test(inputPassword.value.trim())) {
     isDataValid = false;
     errorPassword.style.display = "block";
-    errorPassword.innerText = "Password must be at least 08 characters";
+    errorPassword.innerText = "Password must be  08 characters";
   } else {
     errorPassword.style.display = "none";
   }

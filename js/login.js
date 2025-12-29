@@ -1,6 +1,6 @@
 // alert("test");
 //variables declaration
-const form = document.getElementById("form-container");
+export const form = document.getElementById("form-container");
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 const error = document.getElementById("error");
@@ -16,10 +16,12 @@ form.addEventListener("submit", (e) => {
       user.password === inputPassword.value.trim()
   );
 
-  
   if (matchedUser) {
     error.style.display = "none";
+    alert("Log in Successfully!");
   } else {
-    error.style.display = "Invalid Email / Paassword"
+    error.style.display = "block";
+    error.innerText = "Invalid Email / Paassword";
+    alert("Log in Unsuccessfully!");
   }
 });
